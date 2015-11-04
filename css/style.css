@@ -20,7 +20,7 @@ font-size: 2.6em;
 
 /* Navigation */
 
-.nav_index{
+nav{
 display: block;
 width: 280px;
 margin: 10px auto 0 auto;
@@ -97,7 +97,7 @@ font-size: 4.3em;
 
 /* Navigation */
 
-.nav_index{
+nav{
 display: block;
 width: 480px;
 margin: 80px auto 0 auto;
@@ -177,7 +177,7 @@ font-size: 4em;
 
 /* Navigation */
 
-.nav_index{
+nav{
 display: block;
 width: 425px;
 margin: 10% auto 0 auto;
