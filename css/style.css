@@ -1,62 +1,29 @@
+/* ############################################################
+#########               CSS SMARTPHONE                #########
+##############################################################*/
+
+@media screen and (min-width: 150px) and (max-width: 450px){
+
 body {
 background-color: #34495e;
 font-family: Coda;
 }
 
-/* Titres H1 et H2 */
+/* Titres H1 */
 
 h1 {
-  width: 450px;
-  margin: 50px auto 40px auto;
+  width: 280px;
+  margin: 20px auto 15px auto;
 color: #ffffff;
-font-size: 4.3em;
-}
-
-
-h2 {
-  margin: 70px 0 50px 5%;
-  font-size: 2em;
-}
-
-.h2terminal {
-  color: #e6910c;
-}
-
-#h2linux{
-color: #01ad56;
-}
-
-#h2git {
-  color: #f00b75;
-}
-
-#h2vim {
-color: #839395;
+font-size: 2.6em;
 }
 
 /* Navigation */
 
 .nav_index{
 display: block;
-width: 480px;
-margin: 80px auto 0 auto;
-font-family: arial;
-font-size: 1.2em;
-}
-
-.nav2{
-width: 340px;
-margin: -20px auto 0 auto;
-}
-
-/* Propriétés des sections */
-
-section{
-font-family: coda;
-}
-
-.section_cheatsheet{
-  margin-left: 3%;
+width: 280px;
+margin: 10px auto 0 auto;
 }
 
 /* Liens */
@@ -72,59 +39,83 @@ a:focus{
 outline:0;
 }
 
-/* Listes */
+/* Positionnement et taille images */
 
-ul{
-  list-style-type:none;
+img{
+display: inline-block;
+width: 135px ;
+height: 105px ;
 }
 
-li{
-  margin: 7px 0;
-  color: #fff;
+#img2, #img4{
+float: right;
 }
 
-/* Propriétés des <strong> dans les listes */
+/* Transitions images index */
 
-.strong1{
-  margin: 0 1%;
-  color: #e6910c;
+.cf {
+  position:relative;
+  height:105px;
+  width:135px;
+  margin:1px;
+  display: inline-block;
 }
 
-.strong2{
-  margin: 0 1%;
-  color: #01ad56;
+.cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
-.strong3 {
-  margin: 0 1%;
-  color: #f00b75;
+.cf .top:hover {
+  opacity:0;
+}
 }
 
-.strong4 {
-  margin: 0 1%;
-  color: #839395;
+/* ############################################################
+#########                CSS PC BUREAU                #########
+##############################################################*/
+
+@media screen and (min-width: 900px){
+
+body {
+background-color: #34495e;
+font-family: Coda;
 }
 
-/* Propriétés des <strong> dans les sous-listes */
+/* Titres H1 */
 
-.strong12{
-  margin: 0 2%;
-  color: #e6910c;
+h1 {
+  width: 450px;
+  margin: 50px auto 40px auto;
+color: #ffffff;
+font-size: 4.3em;
 }
 
-.strong22{
-  margin: 0 2%;
-  color: #01ad56;
+/* Navigation */
+
+.nav_index{
+display: block;
+width: 480px;
+margin: 80px auto 0 auto;
+font-family: arial;
+font-size: 1.2em;
 }
 
-.strong32{
-  margin: 0 2%;
-  color: #f00b75;
+/* Liens */
+
+a {
+text-decoration: none;
+color: #fff;
 }
 
-.strong42 {
-  margin: 0 2%;
-  color: #839395;
+/* Pour enlever les pointillés lors du clic */
+
+a:focus{
+outline:0;
 }
 
 /* Positionnement et taille images */
@@ -161,18 +152,73 @@ float: right;
 .cf .top:hover {
   opacity:0;
 }
-
-/* Transitions images autres pages */
-
-.nav1{
-position: relative;
-height: 75px;
-width: 100px;
-margin: 0 5px;
-display: inline-block;
 }
 
-.nav1 img {
+/* ############################################################
+#########                CSS TABLETTES                #########
+##############################################################*/
+
+
+@media screen and (min-width: 451px) and (max-width: 899px){
+
+body {
+background-color: #34495e;
+font-family: Coda;
+}
+
+/* Titres H1 */
+
+h1 {
+  width: 425px;
+  margin: 30px auto 15px auto;
+color: #ffffff;
+font-size: 4em;
+}
+
+/* Navigation */
+
+.nav_index{
+display: block;
+width: 425px;
+margin: 10% auto 0 auto;
+}
+
+/* Liens */
+
+a {
+text-decoration: none;
+color: #fff;
+}
+
+/* Pour enlever les pointillés lors du clic */
+
+a:focus{
+outline:0;
+}
+
+/* Positionnement et taille images */
+
+img{
+display: inline-block;
+width: 205px ;
+height: 160px ;
+}
+
+#img2, #img4{
+float: right;
+}
+
+/* Transitions images index */
+
+.cf {
+  position:relative;
+  height:160px;
+  width:205px;
+  margin:3px;
+  display: inline-block;
+}
+
+.cf img {
   position:absolute;
   left:0;
   -webkit-transition: opacity 0.5s ease-in-out;
@@ -181,22 +227,7 @@ display: inline-block;
   transition: opacity 0.5s ease-in-out;
 }
 
-.nav1 img.top1:hover {
+.cf .top:hover {
   opacity:0;
 }
-
-.top1, .bottom1{
-  height: 75px;
-  width: 100px;
-
-}
-
-/* Retour vers le haut de page */
-
-#fleche {
-position: fixed;
-right: 50px;
-bottom: 50px;
-width: 50px;
-height: 50px;
 }
